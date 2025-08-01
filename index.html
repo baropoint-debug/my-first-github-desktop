@@ -837,11 +837,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       max-width: 800px;
       margin: 0 auto 16px;
       text-align: left;
-      border: none;
+      border: 1px solid #e0e0e0;
       border-radius: 12px;
       overflow: hidden;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      background: #fff;
     }
     .faq-item:hover {
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -896,7 +897,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq-toggle::after {
       content: '';
       position: absolute;
-      background: #666;
+      background: #1e90ff;
       transition: all 0.3s ease;
     }
     .faq-toggle::before {
@@ -904,12 +905,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       height: 16px;
       top: 4px;
       left: 11px;
+      background: #1e90ff;
     }
     .faq-toggle::after {
       width: 16px;
       height: 2px;
       top: 11px;
       left: 4px;
+      background: #1e90ff;
     }
     .faq-item.active .faq-toggle::before {
       transform: rotate(90deg);
@@ -921,28 +924,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      background: #fff;
-      opacity: 0;
+      transition: max-height 0.3s ease;
+      background: #f8f9fa;
+      border-top: 1px solid #e9ecef;
     }
     .faq-item.active .faq-answer {
-      max-height: 300px;
-      opacity: 1;
+      max-height: 500px;
     }
     .faq-answer-content {
-      padding: 0 28px 28px;
-      transform: translateY(-10px);
-      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .faq-item.active .faq-answer-content {
-      transform: translateY(0);
+      padding: 20px 28px;
+      color: #333;
     }
     .faq-answer p {
       font-size: 1rem;
-      color: #555;
-      line-height: 1.7;
+      color: #333;
+      line-height: 1.6;
       margin: 0;
       font-family: 'Poppins', sans-serif;
+      font-weight: 400;
     }
 
     /* 푸터 */
@@ -3250,7 +3249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="chat-user-question">How do I get better at math?</div>
                 <div class="chat-content">
                   <div class="chat-avatar">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=60&h=60&fit=crop&crop=face" alt="Sassy High School Girl" onerror="this.parentElement.innerHTML='👩‍🎓'; this.parentElement.style.fontSize='1.5rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=60&h=60&fit=crop&crop=face" alt="Sassy High School Girl" onerror="if(this.parentElement){this.parentElement.innerHTML='👩‍🎓'; this.parentElement.style.fontSize='1.5rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
                   </div>
                   <div class="chat-text-content">
                     <div class="chat-name">Sassy High School Girl</div>
@@ -3560,7 +3559,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- 테스트용 프로필 아이템들 -->
       <div class="profile-item" data-url="https://askai.at/askai" onclick="openProfileWindow('https://askai.at/askai')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face" alt="ASK AI" onerror="this.parentElement.innerHTML='🤖'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face" alt="ASK AI" onerror="if(this.parentElement){this.parentElement.innerHTML='🤖'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@askai</div>
         <div class="profile-stats">
@@ -3569,7 +3568,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/techguru" onclick="openProfileWindow('https://askai.at/techguru')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Tech Guru" onerror="this.parentElement.innerHTML='👨‍💻'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Tech Guru" onerror="if(this.parentElement){this.parentElement.innerHTML='👨‍💻'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@techguru</div>
         <div class="profile-stats">
@@ -3578,7 +3577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/schoolgirl" onclick="openProfileWindow('https://askai.at/schoolgirl')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop&crop=face" alt="School Girl" onerror="this.parentElement.innerHTML='👩‍🎓'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop&crop=face" alt="School Girl" onerror="if(this.parentElement){this.parentElement.innerHTML='👩‍🎓'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@schoolgirl</div>
         <div class="profile-stats">
@@ -3587,7 +3586,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/eternalflame" onclick="openProfileWindow('https://askai.at/eternalflame')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face" alt="Eternal Flame" onerror="this.parentElement.innerHTML='🔥'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face" alt="Eternal Flame" onerror="if(this.parentElement){this.parentElement.innerHTML='🔥'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@eternalflame</div>
         <div class="profile-stats">
@@ -3596,7 +3595,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/chef" onclick="openProfileWindow('https://askai.at/chef')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="Chef" onerror="this.parentElement.innerHTML='👨‍🍳'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="Chef" onerror="if(this.parentElement){this.parentElement.innerHTML='👨‍🍳'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@chef</div>
         <div class="profile-stats">
@@ -3605,7 +3604,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/artist" onclick="openProfileWindow('https://askai.at/artist')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Artist" onerror="this.parentElement.innerHTML='🎭'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Artist" onerror="if(this.parentElement){this.parentElement.innerHTML='🎭'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@artist</div>
         <div class="profile-stats">
@@ -3614,7 +3613,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/fitness" onclick="openProfileWindow('https://askai.at/fitness')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face" alt="Fitness" onerror="this.parentElement.innerHTML='💪'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face" alt="Fitness" onerror="if(this.parentElement){this.parentElement.innerHTML='💪'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@fitness</div>
         <div class="profile-stats">
@@ -3623,7 +3622,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/business" onclick="openProfileWindow('https://askai.at/business')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face" alt="Business" onerror="this.parentElement.innerHTML='💼'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face" alt="Business" onerror="if(this.parentElement){this.parentElement.innerHTML='💼'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@business</div>
         <div class="profile-stats">
@@ -3632,7 +3631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/teacher" onclick="openProfileWindow('https://askai.at/teacher')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face" alt="Teacher" onerror="this.parentElement.innerHTML='👩‍🏫'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face" alt="Teacher" onerror="if(this.parentElement){this.parentElement.innerHTML='👩‍🏫'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@teacher</div>
         <div class="profile-stats">
@@ -3641,7 +3640,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/doctor" onclick="openProfileWindow('https://askai.at/doctor')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face" alt="Doctor" onerror="this.parentElement.innerHTML='👨‍⚕️'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face" alt="Doctor" onerror="if(this.parentElement){this.parentElement.innerHTML='👨‍⚕️'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@doctor</div>
         <div class="profile-stats">
@@ -3650,7 +3649,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/lawyer" onclick="openProfileWindow('https://askai.at/lawyer')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Lawyer" onerror="this.parentElement.innerHTML='⚖️'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Lawyer" onerror="if(this.parentElement){this.parentElement.innerHTML='⚖️'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@lawyer</div>
         <div class="profile-stats">
@@ -3659,7 +3658,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/consultant" onclick="openProfileWindow('https://askai.at/consultant')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="Consultant" onerror="this.parentElement.innerHTML='📊'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="Consultant" onerror="if(this.parentElement){this.parentElement.innerHTML='📊'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@consultant</div>
         <div class="profile-stats">
@@ -3668,7 +3667,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/coach" onclick="openProfileWindow('https://askai.at/coach')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face" alt="Coach" onerror="this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face" alt="Coach" onerror="if(this.parentElement){this.parentElement.innerHTML='🏆'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@coach</div>
         <div class="profile-stats">
@@ -3677,7 +3676,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="profile-item" data-url="https://askai.at/mentor" onclick="openProfileWindow('https://askai.at/mentor')">
         <div class="profile-image">
-          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Mentor" onerror="this.parentElement.innerHTML='🧠'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';">
+                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Mentor" onerror="if(this.parentElement){this.parentElement.innerHTML='🧠'; this.parentElement.style.fontSize='2rem'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center';}">
         </div>
         <div class="profile-brand" translate="no">@mentor</div>
         <div class="profile-stats">
@@ -3993,21 +3992,85 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // Call translate function on page load
     translatePage();
     
-    // FAQ 토글 기능
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
+        // FAQ 토글 기능
+    console.log('FAQ 토글 기능 초기화 시작');
+    
+    function initFAQ() {
+      const faqItems = document.querySelectorAll('.faq-item');
+      console.log('FAQ 아이템 개수:', faqItems.length);
+      
+      // 기존 이벤트 리스너 제거 (중복 방지)
+      faqItems.forEach((item, index) => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          // 기존 클릭 이벤트 리스너 제거
+          const newQuestion = question.cloneNode(true);
+          question.parentNode.replaceChild(newQuestion, question);
+        }
+      });
+      
+      // 새로운 이벤트 리스너 등록
+      faqItems.forEach((item, index) => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
         
-        // 다른 모든 FAQ 아이템 닫기
-        faqItems.forEach(otherItem => {
-          otherItem.classList.remove('active');
+        console.log(`FAQ ${index + 1} 설정:`, {
+          question: !!question,
+          answer: !!answer,
+          answerContent: answer ? answer.innerHTML : '없음'
         });
         
-        // 클릭된 아이템 토글
-        if (!isActive) {
-          item.classList.add('active');
+        if (question) {
+          question.addEventListener('click', function(e) {
+            console.log(`FAQ ${index + 1} 클릭됨`);
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const isActive = item.classList.contains('active');
+            console.log(`FAQ ${index + 1} 현재 상태:`, isActive ? '활성' : '비활성');
+            
+            // 다른 모든 FAQ 아이템 닫기
+            faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.classList.remove('active');
+              }
+            });
+            
+            // 클릭된 아이템 토글
+            if (!isActive) {
+              item.classList.add('active');
+              console.log(`FAQ ${index + 1} 활성화됨`);
+            } else {
+              item.classList.remove('active');
+              console.log(`FAQ ${index + 1} 비활성화됨`);
+            }
+          });
+        } else {
+          console.error(`FAQ ${index + 1}에서 .faq-question을 찾을 수 없음`);
+        }
+      });
+    }
+    
+    // DOM이 완전히 로드된 후 한 번만 실행
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initFAQ);
+    } else {
+      initFAQ();
+    }
+    
+    console.log('FAQ 토글 기능 초기화 완료');
+    
+    // 이미지 onerror 오류 수정
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('img[onerror]');
+      images.forEach(img => {
+        const originalOnError = img.getAttribute('onerror');
+        if (originalOnError && originalOnError.includes('this.parentElement')) {
+          const safeOnError = originalOnError.replace(
+            'this.parentElement',
+            'this.parentElement && this.parentElement'
+          );
+          img.setAttribute('onerror', safeOnError);
         }
       });
     });
@@ -4461,13 +4524,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const step5 = document.getElementById('step5');
     const step6 = document.getElementById('step6');
     
+    // 요소들이 존재하는지 확인
+    if (!step1 || !step2 || !step3 || !step4 || !step5 || !step6) {
+      console.log('Smart setup demo elements not found, skipping animation');
+      return;
+    }
+    
     // 모든 선택 상태 초기화
     document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
     
     // 모든 단계 숨기기
     [step2, step3, step4, step5, step6].forEach(step => {
-      step.style.display = 'none';
-      step.style.opacity = '0';
+      if (step) {
+        step.style.display = 'none';
+        step.style.opacity = '0';
+      }
     });
     
     // 첫 번째 단계만 표시
@@ -4498,10 +4569,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const step5 = document.getElementById('step5');
     const step6 = document.getElementById('step6');
     
+    // 요소들이 존재하는지 확인
+    if (!step1 || !step2 || !step3 || !step4 || !step5 || !step6) {
+      console.log('Smart setup demo elements not found, skipping roles animation');
+      return;
+    }
+    
     // 모든 단계 숨기기
     [step1, step3, step4, step5, step6].forEach(step => {
-      step.style.display = 'none';
-      step.style.opacity = '0';
+      if (step) {
+        step.style.display = 'none';
+        step.style.opacity = '0';
+      }
     });
     
     // 현재 단계만 표시
@@ -4510,17 +4589,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     // 역할 선택 상태 초기화
     const roleOptions = document.getElementById('roleOptions');
-    roleOptions.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
-    
-    // 하드코딩된 버튼들에서 랜덤 선택
-    const buttons = roleOptions.querySelectorAll('.option-btn');
-    const randomBtn = buttons[Math.floor(Math.random() * buttons.length)];
-    
-    if (randomBtn) {
-      randomBtn.classList.add('selected');
-              setTimeout(() => {
+    if (roleOptions) {
+      roleOptions.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+      
+      // 하드코딩된 버튼들에서 랜덤 선택
+      const buttons = roleOptions.querySelectorAll('.option-btn');
+      const randomBtn = buttons[Math.floor(Math.random() * buttons.length)];
+      
+      if (randomBtn) {
+        randomBtn.classList.add('selected');
+        setTimeout(() => {
           autoShowTones(category, randomBtn.dataset.value);
         }, 5000);
+      }
     }
   }
   
